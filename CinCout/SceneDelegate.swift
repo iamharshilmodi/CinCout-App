@@ -10,6 +10,7 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
+    let defaults = UserDefaults.standard
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -17,6 +18,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        if defaults.bool(forKey: "is_logged_in") == true {
+            let mainTabBarController = storyboard.instantiateViewController(identifier: "tabbar")
+            window?.rootViewController = mainTabBarController
+        } else {
+            let loginNavController = storyboard.instantiateViewController(identifier: "loginView")
+            window?.rootViewController = loginNavController
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,6 +58,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func changeRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard let window = self.window else {
+            return
+        }
 
+        window.rootViewController = vc
+//        window.makeKeyAndVisible()
+        
+        // add animation
+        UIView.transition(with: window,
+                          duration: 0.5,
+                          options: [.transitionCrossDissolve],
+                          animations: nil,
+                          completion: nil)
+        
+    }
 }
 

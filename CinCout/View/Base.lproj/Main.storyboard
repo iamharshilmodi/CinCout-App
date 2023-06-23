@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vc0-P0-N37">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="NRe-MI-RDQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vc0-P0-N37" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wPY-Ck-ctz">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nzO-bP-1wP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zzk-Jt-Mn5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.81395348837209" y="-126.18025751072962"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="loginView" id="BYZ-38-t0r" customClass="LoginViewController" customModule="CinCout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rmj-rP-0rQ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeh-Vf-XUs">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="P6m-HU-Hqa">
+                                                <rect key="frame" x="95" y="75" width="224" height="235"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jIc-Yi-yFQ">
+                                        <rect key="frame" x="0.0" y="387" width="414" height="387"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="57H-3t-2Tx">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NZ7-pN-4CB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="193.66666666666666"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mis" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVp-Qf-Goh">
+                                                                <rect key="frame" x="49" y="46" width="316" height="34"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9yC-9w-gss">
+                                                                <rect key="frame" x="49" y="110" width="316" height="34"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qne-gD-zvU">
+                                                        <rect key="frame" x="0.0" y="193.66666666666663" width="414" height="193.33333333333337"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="EOc-HV-UrH">
+                                                                <rect key="frame" x="131" y="71" width="153" height="56"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="4gv-uQ-u75"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Log In">
+                                                                    <fontDescription key="titleFontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="18"/>
+                                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="LoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BSy-wJ-BPd"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="57H-3t-2Tx" secondAttribute="bottom" id="AzU-6j-IWw"/>
+                                            <constraint firstAttribute="trailing" secondItem="57H-3t-2Tx" secondAttribute="trailing" id="mx1-0k-epQ"/>
+                                            <constraint firstItem="57H-3t-2Tx" firstAttribute="top" secondItem="jIc-Yi-yFQ" secondAttribute="top" id="nbq-fN-Lji"/>
+                                            <constraint firstItem="57H-3t-2Tx" firstAttribute="leading" secondItem="jIc-Yi-yFQ" secondAttribute="leading" id="oW8-v7-3aG"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rmj-rP-0rQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EVR-wa-cHl"/>
+                            <constraint firstItem="rmj-rP-0rQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IKI-DB-VdQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rmj-rP-0rQ" secondAttribute="bottom" id="nou-cy-gOW"/>
+                            <constraint firstAttribute="trailing" secondItem="rmj-rP-0rQ" secondAttribute="trailing" id="sNi-Mx-DKV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Na9-wb-3qD"/>
+                    <connections>
+                        <outlet property="MisField" destination="LVp-Qf-Goh" id="4qD-c6-cio"/>
+                        <outlet property="PasswordField" destination="9yC-9w-gss" id="uIx-3V-2Rm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1004" y="-127"/>
+        </scene>
+        <!--Scan-->
+        <scene sceneID="pQW-4R-Wdd">
+            <objects>
+                <viewController id="j84-36-a3I" customClass="ScanViewController" customModule="CinCout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9lw-s8-AGj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ZRk-4s-vVa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KN-7B-44t">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="384.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="bag-Nu-j0j">
+                                                <rect key="frame" x="91" y="76" width="232" height="233"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4rQ-25-J2p">
+                                        <rect key="frame" x="0.0" y="384.66666666666674" width="414" height="384.33333333333326"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="N7Q-1m-v4L">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="384.33333333333331"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUx-rV-0q9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Reason" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ysw-DG-4fl">
+                                                                <rect key="frame" x="86" y="48" width="241" height="34"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Destination" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CKV-60-leX">
+                                                                <rect key="frame" x="86" y="110" width="241" height="34"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="No need to add reason and destination" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="J3L-iu-c0m">
+                                                                <rect key="frame" x="91" y="58" width="232" height="75"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="textColor" systemColor="systemPinkColor"/>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                            </textView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Fv-eO-oNF">
+                                                        <rect key="frame" x="0.0" y="191.99999999999994" width="414" height="192.33333333333331"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YLN-Wj-dvY">
+                                                                <rect key="frame" x="48" y="101" width="318" height="60"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Scan">
+                                                                    <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="ScanButton:" destination="j84-36-a3I" eventType="touchUpInside" id="Kxr-9H-Foj"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh5-Sd-bbj">
+                                                                <rect key="frame" x="48" y="24" width="318" height="60"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Check Out">
+                                                                    <color key="baseBackgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="sendDataPressed:" destination="j84-36-a3I" eventType="touchUpInside" id="7pF-EF-rCD"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="N7Q-1m-v4L" firstAttribute="leading" secondItem="4rQ-25-J2p" secondAttribute="leading" id="51t-6N-gRW"/>
+                                            <constraint firstItem="N7Q-1m-v4L" firstAttribute="top" secondItem="4rQ-25-J2p" secondAttribute="top" id="8yi-AP-XkU"/>
+                                            <constraint firstAttribute="trailing" secondItem="N7Q-1m-v4L" secondAttribute="trailing" id="lrN-sV-wYI"/>
+                                            <constraint firstAttribute="bottom" secondItem="N7Q-1m-v4L" secondAttribute="bottom" id="x2h-9x-VZg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7KN-7B-44t" firstAttribute="leading" secondItem="ZRk-4s-vVa" secondAttribute="leading" id="Sab-Du-bTC"/>
+                                    <constraint firstItem="4rQ-25-J2p" firstAttribute="leading" secondItem="ZRk-4s-vVa" secondAttribute="leading" id="mD1-1i-NVV"/>
+                                    <constraint firstAttribute="trailing" secondItem="7KN-7B-44t" secondAttribute="trailing" id="q8b-8H-IIL"/>
+                                    <constraint firstAttribute="trailing" secondItem="4rQ-25-J2p" secondAttribute="trailing" id="sLs-5a-i6E"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pYr-U4-wte"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZRk-4s-vVa" firstAttribute="leading" secondItem="pYr-U4-wte" secondAttribute="leading" id="A29-c2-T7K"/>
+                            <constraint firstItem="ZRk-4s-vVa" firstAttribute="top" secondItem="pYr-U4-wte" secondAttribute="top" id="QXR-q4-NeD"/>
+                            <constraint firstItem="pYr-U4-wte" firstAttribute="bottom" secondItem="ZRk-4s-vVa" secondAttribute="bottom" id="XL2-4Y-N9V"/>
+                            <constraint firstItem="pYr-U4-wte" firstAttribute="trailing" secondItem="ZRk-4s-vVa" secondAttribute="trailing" id="x60-9R-Ok6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Scan" image="barcode.viewfinder" catalog="system" id="kNw-fO-bCR"/>
+                    <navigationItem key="navigationItem" id="kgR-W1-AzN"/>
+                    <connections>
+                        <outlet property="destinationField" destination="CKV-60-leX" id="2bw-0R-VHH"/>
+                        <outlet property="notice" destination="J3L-iu-c0m" id="bVC-H3-3IZ"/>
+                        <outlet property="reasonField" destination="ysw-DG-4fl" id="vhl-zM-Uho"/>
+                        <outlet property="tempbutton" destination="kh5-Sd-bbj" id="djo-Sp-eZN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t2B-qI-6Ex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040.579710144928" y="-196.20535714285714"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="7Z0-d3-g5g">
+            <objects>
+                <viewController title="History" id="FKn-YL-HMF" customClass="HistoryViewController" customModule="CinCout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FjD-ys-p6x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dfL-28-fuz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="167" id="XlB-4G-xMp" customClass="customCellTableViewCell" customModule="CinCout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="414" height="167"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XlB-4G-xMp" id="lX6-em-c8I">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="7ee-xH-ABj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yTS-60-h5T">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="167"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nw2-XI-5Qb">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
+                                                                    <subviews>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Time Out" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UG3-0r-j57">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="203" height="28"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="systemPinkColor"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="12:00 (01-01-2003)" translatesAutoresizingMaskIntoConstraints="NO" id="NQY-lK-BJk">
+                                                                            <rect key="frame" x="211" y="0.0" width="203" height="28"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="labelColor"/>
+                                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hyp-pA-qgr">
+                                                                    <rect key="frame" x="0.0" y="28" width="414" height="27.666666666666671"/>
+                                                                    <subviews>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Date Out" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b2L-an-WaB">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="203" height="27.666666666666668"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="systemPinkColor"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="12:00 (01-01-2003)" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4F-cM-dKx">
+                                                                            <rect key="frame" x="211" y="0.0" width="203" height="27.666666666666668"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="labelColor"/>
+                                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3ea-mF-DXZ">
+                                                                    <rect key="frame" x="0.0" y="55.666666666666657" width="414" height="28"/>
+                                                                    <subviews>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="Time In" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="L5q-QU-u9x">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="203" height="28"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="systemPinkColor"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="12:00 (01-01-2003)" translatesAutoresizingMaskIntoConstraints="NO" id="0JZ-ke-eAV">
+                                                                            <rect key="frame" x="211" y="0.0" width="203" height="28"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="labelColor"/>
+                                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ocB-pF-Evs">
+                                                                    <rect key="frame" x="0.0" y="83.666666666666671" width="414" height="27.666666666666671"/>
+                                                                    <subviews>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="Date In" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="ukm-iT-cS2">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="203" height="27.666666666666668"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="systemPinkColor"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="12:00 (01-01-2003)" translatesAutoresizingMaskIntoConstraints="NO" id="DTQ-eh-D4t">
+                                                                            <rect key="frame" x="211" y="0.0" width="203" height="27.666666666666668"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="labelColor"/>
+                                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gkt-5F-1la">
+                                                                    <rect key="frame" x="0.0" y="111.33333333333333" width="414" height="27.999999999999986"/>
+                                                                    <subviews>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="Destination" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="Wrd-fo-yd5">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="203" height="28"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="systemPinkColor"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="Bharuch" translatesAutoresizingMaskIntoConstraints="NO" id="s2G-I2-rbW">
+                                                                            <rect key="frame" x="211" y="0.0" width="203" height="28"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="labelColor"/>
+                                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Eop-4f-84n">
+                                                                    <rect key="frame" x="0.0" y="139.33333333333334" width="414" height="27.666666666666657"/>
+                                                                    <subviews>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="Reason" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="KDy-58-r2k">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="203" height="27.666666666666668"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="systemPinkColor"/>
+                                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" text="Home" translatesAutoresizingMaskIntoConstraints="NO" id="zcr-ns-eig">
+                                                                            <rect key="frame" x="211" y="0.0" width="203" height="27.666666666666668"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                            <color key="textColor" systemColor="labelColor"/>
+                                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                        </textView>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="yTS-60-h5T" secondAttribute="bottom" id="ULf-ie-uvX"/>
+                                                        <constraint firstItem="yTS-60-h5T" firstAttribute="leading" secondItem="7ee-xH-ABj" secondAttribute="leading" id="aV4-s4-Gn3"/>
+                                                        <constraint firstItem="yTS-60-h5T" firstAttribute="top" secondItem="7ee-xH-ABj" secondAttribute="top" id="gJk-VF-1zE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="yTS-60-h5T" secondAttribute="trailing" id="nRU-zP-7dB"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7ee-xH-ABj" firstAttribute="leading" secondItem="lX6-em-c8I" secondAttribute="leading" id="Kfp-eD-z91"/>
+                                                <constraint firstAttribute="trailing" secondItem="7ee-xH-ABj" secondAttribute="trailing" id="mbr-MI-jjj"/>
+                                                <constraint firstAttribute="bottom" secondItem="7ee-xH-ABj" secondAttribute="bottom" id="nkd-Ix-Lzv"/>
+                                                <constraint firstItem="7ee-xH-ABj" firstAttribute="top" secondItem="lX6-em-c8I" secondAttribute="top" id="qco-CI-bf7"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateIn" destination="DTQ-eh-D4t" id="fTV-o2-UNz"/>
+                                            <outlet property="dateOut" destination="s4F-cM-dKx" id="tAT-GY-ezo"/>
+                                            <outlet property="dest" destination="s2G-I2-rbW" id="h4Y-MP-085"/>
+                                            <outlet property="reason" destination="zcr-ns-eig" id="CPA-bB-Otb"/>
+                                            <outlet property="timeIn" destination="0JZ-ke-eAV" id="OEW-rC-c7Q"/>
+                                            <outlet property="timeOut" destination="NQY-lK-BJk" id="WLD-h1-hj4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IiP-R1-4UM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IiP-R1-4UM" firstAttribute="bottom" secondItem="dfL-28-fuz" secondAttribute="bottom" id="4wC-zi-u7x"/>
+                            <constraint firstItem="IiP-R1-4UM" firstAttribute="trailing" secondItem="dfL-28-fuz" secondAttribute="trailing" id="l9U-Lk-yUH"/>
+                            <constraint firstItem="dfL-28-fuz" firstAttribute="top" secondItem="IiP-R1-4UM" secondAttribute="top" id="lHo-Xg-wHw"/>
+                            <constraint firstItem="dfL-28-fuz" firstAttribute="leading" secondItem="IiP-R1-4UM" secondAttribute="leading" id="sWL-TP-mr1"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="Lbb-We-7vA"/>
+                    <connections>
+                        <outlet property="table" destination="dfL-28-fuz" id="LVg-Vo-yin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yAJ-vF-urt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3040.579710144928" y="548.4375"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="okK-tR-7j0">
+            <objects>
+                <viewController id="NTk-3B-nVR" customClass="ProfileViewController" customModule="CinCout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ych-8J-Hxl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="m37-y2-s6p">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4t3-l2-dy1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="192.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="qyF-PO-ohy">
+                                                <rect key="frame" x="145" y="37" width="124" height="117"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="73K-MT-co4">
+                                        <rect key="frame" x="0.0" y="192.33333333333331" width="414" height="192.33333333333331"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zaj-tl-rBy">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="192.33333333333334"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Name" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbw-aJ-XbW">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Harshil Modi" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m4P-4m-iJU">
+                                                        <rect key="frame" x="0.0" y="47.999999999999972" width="414" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Email ID" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZA-RK-h3g">
+                                                        <rect key="frame" x="0.0" y="95.999999999999972" width="414" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="harshilmodi20@cse.iiitp.ac.in" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmc-u1-f8j">
+                                                        <rect key="frame" x="0.0" y="143.99999999999997" width="414" height="48.333333333333343"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="zaj-tl-rBy" secondAttribute="bottom" id="5YB-EH-Uoj"/>
+                                            <constraint firstItem="zaj-tl-rBy" firstAttribute="top" secondItem="73K-MT-co4" secondAttribute="top" id="PvR-Bq-raU"/>
+                                            <constraint firstAttribute="trailing" secondItem="zaj-tl-rBy" secondAttribute="trailing" id="YHL-gX-H6n"/>
+                                            <constraint firstItem="zaj-tl-rBy" firstAttribute="leading" secondItem="73K-MT-co4" secondAttribute="leading" id="bcT-4g-fC0"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M48-rm-Lnv">
+                                        <rect key="frame" x="0.0" y="384.66666666666669" width="414" height="192.00000000000006"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="3uz-zg-wZH">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="192"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="MiS" translatesAutoresizingMaskIntoConstraints="NO" id="2sv-1B-xpi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="112015062" translatesAutoresizingMaskIntoConstraints="NO" id="k97-z1-d8U">
+                                                        <rect key="frame" x="0.0" y="48" width="414" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Department" translatesAutoresizingMaskIntoConstraints="NO" id="Oom-Ii-IR2">
+                                                        <rect key="frame" x="0.0" y="95.999999999999943" width="414" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" text="Computer Science and Engineering" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNK-55-47N">
+                                                        <rect key="frame" x="0.0" y="143.99999999999994" width="414" height="48"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" systemColor="labelColor"/>
+                                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="3uz-zg-wZH" firstAttribute="leading" secondItem="M48-rm-Lnv" secondAttribute="leading" id="LJr-1a-nMR"/>
+                                            <constraint firstAttribute="trailing" secondItem="3uz-zg-wZH" secondAttribute="trailing" id="LaP-rj-N3t"/>
+                                            <constraint firstItem="3uz-zg-wZH" firstAttribute="top" secondItem="M48-rm-Lnv" secondAttribute="top" id="eXo-eD-SuJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="3uz-zg-wZH" secondAttribute="bottom" id="rR8-ec-EEX"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NX5-tj-7cb">
+                                        <rect key="frame" x="0.0" y="576.66666666666663" width="414" height="192.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrG-fu-0Tn">
+                                                <rect key="frame" x="146" y="68" width="122" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Log Out">
+                                                    <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="logoutPressed:" destination="NTk-3B-nVR" eventType="touchUpInside" id="JmD-E4-500"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kb3-gn-Y9f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m37-y2-s6p" firstAttribute="leading" secondItem="kb3-gn-Y9f" secondAttribute="leading" id="D1a-fQ-svU"/>
+                            <constraint firstItem="kb3-gn-Y9f" firstAttribute="trailing" secondItem="m37-y2-s6p" secondAttribute="trailing" id="J6J-jV-NB0"/>
+                            <constraint firstItem="m37-y2-s6p" firstAttribute="top" secondItem="kb3-gn-Y9f" secondAttribute="top" id="OIY-hc-me0"/>
+                            <constraint firstItem="m37-y2-s6p" firstAttribute="leading" secondItem="kb3-gn-Y9f" secondAttribute="leading" id="Omq-5L-NUE"/>
+                            <constraint firstItem="kb3-gn-Y9f" firstAttribute="bottom" secondItem="m37-y2-s6p" secondAttribute="bottom" id="dOW-vh-cJg"/>
+                            <constraint firstItem="m37-y2-s6p" firstAttribute="bottom" secondItem="kb3-gn-Y9f" secondAttribute="bottom" id="eIr-5Q-dGa"/>
+                            <constraint firstItem="m37-y2-s6p" firstAttribute="top" secondItem="kb3-gn-Y9f" secondAttribute="top" id="iRd-e7-NQn"/>
+                            <constraint firstItem="m37-y2-s6p" firstAttribute="trailing" secondItem="kb3-gn-Y9f" secondAttribute="trailing" id="nSB-ZE-aVe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="pvY-Fu-ZXF"/>
+                    <connections>
+                        <outlet property="DepTitle" destination="Oom-Ii-IR2" id="Edg-R5-8OT"/>
+                        <outlet property="EmailTitle" destination="5ZA-RK-h3g" id="hMt-8p-Lvc"/>
+                        <outlet property="Name" destination="m4P-4m-iJU" id="bTB-5T-cZv"/>
+                        <outlet property="NameTitle" destination="Tbw-aJ-XbW" id="NH0-8d-30v"/>
+                        <outlet property="dept" destination="xNK-55-47N" id="t03-gP-gqN"/>
+                        <outlet property="email" destination="zmc-u1-f8j" id="tzg-V6-lOB"/>
+                        <outlet property="mis" destination="k97-z1-d8U" id="TiO-Nw-b77"/>
+                        <outlet property="misTitle" destination="2sv-1B-xpi" id="y5U-lN-tEW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ylc-8v-ARQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3808" y="196"/>
+        </scene>
+        <!--Tab Bar-->
+        <scene sceneID="RvE-iq-Y9N">
+            <objects>
+                <tabBarController storyboardIdentifier="tabbar" automaticallyAdjustsScrollViewInsets="NO" id="Lk8-Fb-qn7" customClass="TabBar" customModule="CinCout" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hc7-Xa-EIa"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LJP-2c-div">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="j84-36-a3I" kind="relationship" relationship="viewControllers" id="oPI-PE-881"/>
+                        <segue destination="NTk-3B-nVR" kind="relationship" relationship="viewControllers" id="U3o-vK-L2B"/>
+                        <segue destination="FKn-YL-HMF" kind="relationship" relationship="viewControllers" id="LJP-sf-jfU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gz8-9D-qt4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.6511627906975" y="196.35193133047213"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="270" height="270"/>
+        <image name="barcode.viewfinder" catalog="system" width="128" height="115"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

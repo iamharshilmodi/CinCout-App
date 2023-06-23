@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6450A702A448F3B00A3B3FD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A6F2A448F3B00A3B3FD /* LoginViewController.swift */; };
+		C6450A732A44D7BC00A3B3FD /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A722A44D7BC00A3B3FD /* ScanViewController.swift */; };
+		C6450A752A44D7CC00A3B3FD /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A742A44D7CC00A3B3FD /* HistoryViewController.swift */; };
+		C6450A772A44D7D500A3B3FD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A762A44D7D500A3B3FD /* ProfileViewController.swift */; };
+		C6450A792A44E33500A3B3FD /* Tokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A782A44E33500A3B3FD /* Tokens.swift */; };
+		C6450A7E2A44F29D00A3B3FD /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A7D2A44F29D00A3B3FD /* Profile.swift */; };
+		C6450A842A46360A00A3B3FD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A832A46360A00A3B3FD /* Item.swift */; };
+		C6450A862A46413B00A3B3FD /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A852A46413B00A3B3FD /* customTableViewCell.swift */; };
+		C6450A882A46426B00A3B3FD /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A872A46426B00A3B3FD /* History.swift */; };
+		C6450A8C2A4652E800A3B3FD /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6450A8B2A4652E800A3B3FD /* TabBar.swift */; };
 		C6D358F42A4343AC00981A1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D358F32A4343AC00981A1B /* AppDelegate.swift */; };
 		C6D358F62A4343AC00981A1B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D358F52A4343AC00981A1B /* SceneDelegate.swift */; };
 		C6D358F82A4343AC00981A1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D358F72A4343AC00981A1B /* ViewController.swift */; };
@@ -16,6 +26,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6450A6F2A448F3B00A3B3FD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C6450A712A44D03200A3B3FD /* CinCout.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CinCout.entitlements; sourceTree = "<group>"; };
+		C6450A722A44D7BC00A3B3FD /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		C6450A742A44D7CC00A3B3FD /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		C6450A762A44D7D500A3B3FD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C6450A782A44E33500A3B3FD /* Tokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tokens.swift; sourceTree = "<group>"; };
+		C6450A7D2A44F29D00A3B3FD /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		C6450A832A46360A00A3B3FD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		C6450A852A46413B00A3B3FD /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
+		C6450A872A46426B00A3B3FD /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		C6450A8B2A4652E800A3B3FD /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C6D358F02A4343AC00981A1B /* CinCout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CinCout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D358F32A4343AC00981A1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6D358F52A4343AC00981A1B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +58,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6450A7A2A44E36A00A3B3FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6450A782A44E33500A3B3FD /* Tokens.swift */,
+				C6450A7D2A44F29D00A3B3FD /* Profile.swift */,
+				C6450A832A46360A00A3B3FD /* Item.swift */,
+				C6450A872A46426B00A3B3FD /* History.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C6450A7B2A44E37100A3B3FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6D358F92A4343AC00981A1B /* Main.storyboard */,
+				C6D358FE2A4343AE00981A1B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C6450A7C2A44E37800A3B3FD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C6450A6F2A448F3B00A3B3FD /* LoginViewController.swift */,
+				C6450A722A44D7BC00A3B3FD /* ScanViewController.swift */,
+				C6450A742A44D7CC00A3B3FD /* HistoryViewController.swift */,
+				C6450A762A44D7D500A3B3FD /* ProfileViewController.swift */,
+				C6450A852A46413B00A3B3FD /* customTableViewCell.swift */,
+				C6450A8B2A4652E800A3B3FD /* TabBar.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		C6D358E72A4343AC00981A1B = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +110,14 @@
 		C6D358F22A4343AC00981A1B /* CinCout */ = {
 			isa = PBXGroup;
 			children = (
+				C6450A712A44D03200A3B3FD /* CinCout.entitlements */,
 				C6D358F32A4343AC00981A1B /* AppDelegate.swift */,
 				C6D358F52A4343AC00981A1B /* SceneDelegate.swift */,
 				C6D358F72A4343AC00981A1B /* ViewController.swift */,
-				C6D358F92A4343AC00981A1B /* Main.storyboard */,
+				C6450A7A2A44E36A00A3B3FD /* Model */,
+				C6450A7B2A44E37100A3B3FD /* View */,
+				C6450A7C2A44E37800A3B3FD /* Controller */,
 				C6D358FC2A4343AE00981A1B /* Assets.xcassets */,
-				C6D358FE2A4343AE00981A1B /* LaunchScreen.storyboard */,
 				C6D359012A4343AE00981A1B /* Info.plist */,
 			);
 			path = CinCout;
@@ -138,9 +194,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6450A842A46360A00A3B3FD /* Item.swift in Sources */,
+				C6450A702A448F3B00A3B3FD /* LoginViewController.swift in Sources */,
 				C6D358F82A4343AC00981A1B /* ViewController.swift in Sources */,
+				C6450A732A44D7BC00A3B3FD /* ScanViewController.swift in Sources */,
+				C6450A752A44D7CC00A3B3FD /* HistoryViewController.swift in Sources */,
+				C6450A772A44D7D500A3B3FD /* ProfileViewController.swift in Sources */,
+				C6450A882A46426B00A3B3FD /* History.swift in Sources */,
+				C6450A862A46413B00A3B3FD /* customTableViewCell.swift in Sources */,
 				C6D358F42A4343AC00981A1B /* AppDelegate.swift in Sources */,
+				C6450A8C2A4652E800A3B3FD /* TabBar.swift in Sources */,
 				C6D358F62A4343AC00981A1B /* SceneDelegate.swift in Sources */,
+				C6450A7E2A44F29D00A3B3FD /* Profile.swift in Sources */,
+				C6450A792A44E33500A3B3FD /* Tokens.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +351,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CinCout/CinCout.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82J3H788U2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CinCout/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Please allow access to scan NFC tag.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -312,10 +381,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CinCout/CinCout.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 82J3H788U2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CinCout/Info.plist;
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Please allow access to scan NFC tag.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
