@@ -611,8 +611,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="j84-36-a3I" kind="relationship" relationship="viewControllers" id="oPI-PE-881"/>
-                        <segue destination="NTk-3B-nVR" kind="relationship" relationship="viewControllers" id="U3o-vK-L2B"/>
                         <segue destination="FKn-YL-HMF" kind="relationship" relationship="viewControllers" id="LJP-sf-jfU"/>
+                        <segue destination="NTk-3B-nVR" kind="relationship" relationship="viewControllers" id="U3o-vK-L2B"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gz8-9D-qt4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
