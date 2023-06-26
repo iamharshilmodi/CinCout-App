@@ -12,4 +12,5 @@ import Foundation
 struct Tokens: Codable {
     let access_token: String?
     let refresh_token: String?
+    let target: String?
 }

@@ -9,13 +9,15 @@ import UIKit
 import CoreNFC
 
 //NFCNDEFReaderSessionDelegate
-class ScanViewController: UIViewController, NFCNDEFReaderSessionDelegate {
+class ScanViewController: UIViewController, NFCNDEFReaderSessionDelegate, UITextFieldDelegate {
     
 //class ScanViewController: UIViewController{
     
     @IBOutlet weak var reasonField: UITextField!
     @IBOutlet weak var destinationField: UITextField!
     @IBOutlet weak var notice: UITextView!
+    
+
     
     @IBOutlet weak var tempbutton: UIButton!
     
@@ -31,6 +33,11 @@ class ScanViewController: UIViewController, NFCNDEFReaderSessionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        reasonField.delegate = self
+        destinationField.delegate = self
+        
+    
+        
         if(defaults.bool(forKey: "is_out")==true)
         {
             reasonField.isHidden=true
@@ -43,7 +50,15 @@ class ScanViewController: UIViewController, NFCNDEFReaderSessionDelegate {
             self.tempbutton.setTitle("Check Out", for: .normal)
         }
     }
-  
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() // Hide the keyboard
+        return true
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true) // Hide the keyboard when the user touches outside the keyboard area
+    }
+    
     @IBAction func ScanButton(_ sender: Any) {
 
         guard let reason = reasonField.text, !reason.isEmpty,
@@ -70,12 +85,17 @@ class ScanViewController: UIViewController, NFCNDEFReaderSessionDelegate {
 
     func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
         var result = ""
+        let target = defaults.string(forKey: "target")
         for payload in messages[0].records{
             result += String.init(data: payload.payload.advanced(by: 3), encoding: .utf8) ?? "Format not supported"
         }
-//        DispatchQueue.main.async {
-//
-//        }
+        DispatchQueue.main.async {
+            
+            if(target==result)
+            {
+                self.sendData()
+            }
+        }
     }
     
 

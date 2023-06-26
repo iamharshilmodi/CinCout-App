@@ -8,7 +8,7 @@
 import UIKit
 //import Parse
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
         
     let defaults = UserDefaults.standard
@@ -23,10 +23,21 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        MisField.delegate = self
+        PasswordField.delegate = self
+        
         PasswordField.isSecureTextEntry = true
     }
 
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder() // Hide the keyboard
+        return true
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true) // Hide the keyboard when the user touches outside the keyboard area
+    }
+
     @IBAction func LoginButton(_ sender: Any) {
         
         guard let mis = MisField.text, !mis.isEmpty,
@@ -84,6 +95,7 @@ class LoginViewController: UIViewController {
                             self.defaults.set(true, forKey: "is_logged_in")
                             self.defaults.set(loginResponse.access_token, forKey: "access_token")
                             self.defaults.set(loginResponse.refresh_token, forKey: "refresh_token")
+                            self.defaults.set(loginResponse.target, forKey: "target")
                             
                             DispatchQueue.main.async {
                                     
