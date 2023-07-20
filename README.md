@@ -1,3 +1,5 @@
+Link for API repo - https://github.com/iamharshilmodi/CinCout-API
+
 # CinCout-App
 
 This is a hostel check-in/check-out full stack ios application where students living in hostel can scan the NFC at the entrance of the hostel and mark their checkout/checkin using the app. 
